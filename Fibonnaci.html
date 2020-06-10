@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sequencie Fibonnaci</title>
+</head>
+<body>
+   <b><p>The Sequencie Fibonnaci</p></b>
+</body>
+<script>
+  function fibonacci(num){
+  var a = 1, b = 0, temp;
+
+  while (num >= 0){
+    temp = a;
+    a = a + b;
+    b = temp;
+    num--;
+  }
+
+  return b;
+}
+  document.write(fibonacci(3));
+    
+</script>
+</html>
